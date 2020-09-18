@@ -14,18 +14,31 @@
                 <img src="logo.png" alt="logo" />
             </div>
         </header>
+        <main>
 
-        <script id="entry-template" type="text/x-handlebars-template">
+          <select class="genre" name="Select">
+            <option value="All">All</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Pop">Pop</option>
+            <option value="Metal">Metal</option>
+          </select>
+
           <div class="cds-container container">
-              <!-- Disco ad esempio -->
-              <div class="cd">
-                  <img src="{{poster}}" alt="">
-                  <h3>{{title}}</h3>
-                  <span class="author">{{author}}</span>
-                  <span class="year">{{year}}</span>
-              </div>
+
+          </div>
+        </main>
+
+        <!-- Template -->
+        <script id="entry-template" type="text/x-handlebars-template">
+          <div class="cd" data-genere="{{genre}}">
+            <img src="{{poster}}" alt="">
+            <h3>{{title}}</h3>
+            <span class="author">{{author}}</span>
+            <span class="year">{{year}}</span>
           </div>
         </script>
+        <!-- /Template -->
 
         <script src="js/script.js" charset="utf-8"></script>
     </body>

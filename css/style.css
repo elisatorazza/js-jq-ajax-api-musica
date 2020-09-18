@@ -66,3 +66,15 @@ header img {
 .cd span.year {
     color: grey;
 }
+main {
+  position: relative;
+}
+.none {
+  display: none;
+}
+.genre {
+position: absolute;
+right: 50%;
+transform: translateX(-50%);
+margin-top: 5px;
+}
